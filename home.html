@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="script.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar-container">
+            <input type="checkbox" name="" id="checkbox">
+            <div class="hamburger-lines">
+                <span class="line line1"></span>
+                <span class="line line2"></span>
+                <span class="line line3"></span>
+            </div>
+            <ul class="menu-items">
+                <li><a href="#home">profile</a></li>
+                <li><a href="#registration">Registration</a></li>
+                <li><a href="#feedback">feedback</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            </div>
+        </div>
+    </nav>
+    <div id="home">
+        <h3>
+            Organization Name: EcoGuardians
+        </h3>
+        <br>
+        <h4>
+            Mission Statement:
+            EcoGuardians is dedicated to the protection and preservation of our planet's ecosystems. Our mission is to foster a deep sense of responsibility and connection to the environment. We strive to:
+        </h4>
+        <br>
+        <h5>
+            Mission Statement:
+EcoGuardians is dedicated to the protection and preservation of our planet's ecosystems. Our mission is to foster a deep sense of responsibility and connection to the environment. We strive to:
+        </h5>
+        <br>
+        <h2>
+            About Us:
+EcoGuardians is more than an organization; it's a movement. Founded by a group of passionate environmentalists, we believe that every individual has the power to contribute to a sustainable and thriving planet. Our team is comprised of experts in environmental science, education, and community development.
+
+Through collaborative efforts, we envision a future where humans coexist harmoniously with nature. We actively seek innovative solutions and embrace a holistic approach to address the challenges our planet faces.
+        </h2>
+        <div class="myLogo">
+            <figuure>
+                <img src="eco-guardians-logo-vector.png" alt="logo nga eto">
+            </figuure>
+        </div>
+        <div class="contact">
+       <h2>
+        Contact Information:
+        <br>
+        Email: info@ecoguardians.org
+        <br>
+        Phone: 0951515151551515151
+       </h2>
+        </div>
+    </div>
+    <br>
+    <br>
+    <hr>
+
+    <section id="registration">
+       <form class="form">
+            <p class="title">Register </p>
+            <p class="message">Signup now and get full access to our app. </p>
+                <div class="flex">
+                <label>
+                    <input required="" placeholder="" type="text" class="input" id="firstName">
+                    <span>Firstname</span>
+                </label>
+        
+                <label>
+                    <input required="" placeholder="" type="text" class="input" id="lastName">
+                    <span>Lastname</span>
+                </label>
+            </div>  
+                    
+            <label>
+                <input required="" placeholder="" type="email" class="input" id="email">
+                <span>Email</span>
+            </label> 
+                
+            <label>
+                <input required="" placeholder="" type="password" class="input" id="password">
+                <span>Password</span>
+            </label>
+            <label>
+                <input required="" placeholder="" type="password" class="input" id="confirmPassword"> 
+                <span>Confirm password</span>
+            </label>
+            <button type="button"  class="submit" onclick="submitForm()">Submit</button>
+            <p class="signin">Already have an acount ? <a href="#">Signin</a> </p>
+        </form>
+</section>
+<hr>
+<section id="feedback">
+  <div class="comment-section">
+    <h1 class="comment-reply-title">Write your comment!</h1>
+    <form id="commentform" class="comment-form">
+        <div class="comment-form-name">
+            <input id="name" placeholder="Name *" name="name" type="text" value="" pattern="^[^0-9]+$" size="30" maxlength="245" required>
+            <label for="name" data-help="¿Are you 11 from Stranger Things?">Name</label>
+        </div>
+        <div class="comment-form-surname">
+            <input id="surname" placeholder="Surname *" name="surname" type="text" value="" size="30" maxlength="245" required>
+            <label for="surname" data-help="A girl has no name- Arya Stark">Surname</label>
+        </div>
+        <div class="comment-form-email">
+            <input id="email" placeholder="Email *" name="email" type="email" value="" size="30" maxlength="100" aria-describedby="email-notes" required>
+            <label for="email" data-help="Format email@email.com">Email</label>
+        </div>
+        <div class="comment-form-comment">
+            <textarea textarea="" placeholder="Comment *" id="comment" name="comment" cols="45" rows="8" maxlength="65525" required></textarea>
+            <label for="comment" data-help="Escribe algo! Lo primero que se te ocurra">Comment</label>
+        </div>
+        <div class="form-submit">
+           <center ><input name="submit"  style="background-color: rgb(114, 199, 114);"       type="submit" id="submit" class="submit" value="Post feedback"></center>
+        </div>
+    </form>
+    </div>
+    <center><h3 style="color:#3b3a3a">feedback</h3></center>
+    </div>
+    </section>
+<hr>
+<section id="contact">
+    <div class="contact container">
+    <div class="map">
+        <iframe src=" https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d194.18822924284217!2d125.50648970848817!3d7.156079202580442!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x323045d5baf8fcbf%3A0x169a2e45b35ef155!2sMintal%2C%20Davao%20City%2C%20Davao%20del%20Sur!5e0!3m2!1sen!2sph!4v1654257749399!5m2!1sen!2sin
+"   width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+    <form action="https://formspree.io/f/xzbowpjq" method="POST">
+        <div class="form">
+            <div class="form-txt">
+                <h4>INFORMATION</h4>
+                <h1>Contact Us</h1>
+                <span>As you might expect of a company that began as a high-end interiors contractor, we pay strict
+                    attention.</span>
+                <h3>Philipines</h3>
+                <p>MINTAL DAVAO CITY  <br>09918139659</p>
+            
+                </div>
+        </div>
+    </form>
+</div>
+</section>
+    <script src="script.js"></script>    
+</body>
+</html>

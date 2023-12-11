@@ -1,0 +1,123 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fff;
+}
+
+header {
+    display: flex;
+    width: 200px;
+    height: auto;
+    margin-left: 10px;
+    background-image: none;
+    animation: fadeIn 3s ease-in-out forwards;
+}
+
+.welcome {
+    display: flex;
+    justify-content: center;
+}
+
+.welcome h1 {
+    font-family: "Montserrat", sans-serif;
+    display: block;
+    justify-content: center;
+    font-size: 30px;
+    margin-top: 200px;
+    letter-spacing: 2px;
+    animation: fadeIn 3s ease-in-out forwards;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.cta {
+    border: none;
+    background: none;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+
+}
+
+.cta span {
+    padding-bottom: 7px;
+    letter-spacing: 4px;
+    font-size: 14px;
+    padding-right: 15px;
+    text-transform: uppercase;
+}
+
+.cta svg {
+    transform: translateX(-8px);
+    transition: all 0.3s ease;
+}
+
+.cta:hover svg {
+    transform: translateX(0);
+}
+
+.cta:active svg {
+    transform: scale(0.9);
+}
+
+.hover-underline-animation {
+    position: relative;
+    color: black;
+    padding-bottom: 20px;
+}
+
+.hover-underline-animation:after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #000000;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+
+.cta:hover .hover-underline-animation:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+.cta:hover .hover-underline-animation:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+/* Media Query for Small Screens */
+@media only screen and (max-width: 600px) {
+    .welcome h1 {
+        font-size: 20px;
+        /* Adjust font size for smaller screens */
+    }
+
+    .button {
+        flex-direction: column;
+    }
+
+    .cta span {
+        font-size: 12px;
+        /* Adjust font size for smaller screens */
+    }
+}
