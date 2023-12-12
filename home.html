@@ -149,6 +149,40 @@ Through collaborative efforts, we envision a future where humans coexist harmoni
     </form>
 </div>
 </section>
-    <script src="script.js"></script>    
+    <script src="script.js"></script>   
+    <script>
+         function submitForm() {
+    const firstName = document.getElementById("firstName").value;
+    const lastName = document.getElementById("lastName").value;
+    const email = document.getElementById("email").value;
+    const password = document.getElementById("password").value;
+    const confirmPassword = document.getElementById("confirmPassword").value;
+
+    if (firstName && lastName && email && password && confirmPassword) {
+      if (password === confirmPassword) {
+        // Show success message
+        Swal.fire({
+          icon: "success",
+          title: "Registration Successful!",
+          text: "You are now a registered user.",
+        });
+      } else {
+        // Show error message for password mismatch
+        Swal.fire({
+          icon: "error",
+          title: "Password Mismatch",
+          text: "Please make sure the passwords match.",
+        });
+      }
+    } else {
+      // Show error message for incomplete form
+      Swal.fire({
+        icon: "error",
+        title: "Incomplete Form",
+        text: "Please fill out all fields.",
+      });
+    }
+  }
+    </script>
 </body>
 </html>
