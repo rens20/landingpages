@@ -63,38 +63,6 @@ window.addEventListener("beforeunload", function () {
     );
   }
 
-  function submitForm() {
-    const firstName = document.getElementById("firstName").value;
-    const lastName = document.getElementById("lastName").value;
-    const email = document.getElementById("email").value;
-    const password = document.getElementById("password").value;
-    const confirmPassword = document.getElementById("confirmPassword").value;
-
-    if (firstName && lastName && email && password && confirmPassword) {
-      if (password === confirmPassword) {
-        // Show success message
-        Swal.fire({
-          icon: "success",
-          title: "Registration Successful!",
-          text: "You are now a registered user.",
-        });
-      } else {
-        // Show error message for password mismatch
-        Swal.fire({
-          icon: "error",
-          title: "Password Mismatch",
-          text: "Please make sure the passwords match.",
-        });
-      }
-    } else {
-      // Show error message for incomplete form
-      Swal.fire({
-        icon: "error",
-        title: "Incomplete Form",
-        text: "Please fill out all fields.",
-      });
-    }
-  }
 
   function postComment() {
     var name = document.getElementById("name").value;
